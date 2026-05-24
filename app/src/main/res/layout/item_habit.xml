@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/StarCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_lavender"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Habit Icon -->
+        <ImageView
+            android:id="@+id/ivHabitIcon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/icon_background_light"
+            android:contentDescription="Habit Icon"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_1" />
+
+        <!-- Completion Star -->
+        <CheckBox
+            android:id="@+id/cbCompleted"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/star_checkbox_selector"
+            android:button="@drawable/star_checkbox_selector" />
+
+        <!-- Habit Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHabitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habit Name"
+                android:textAppearance="@style/StarBody"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHabitDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textAppearance="@style/StarBody"
+                android:textColor="@color/text_secondary"
+                android:visibility="gone" />
+
+            <!-- Steps Progress -->
+            <LinearLayout
+                android:id="@+id/llStepsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvCurrentStep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step 1 of 3"
+                    android:textAppearance="@style/StarBody"
+                    android:textColor="@color/primary_star"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <!-- Step Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/progressBarSteps"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:max="100"
+                    android:progressBackgroundTint="@color/primary_star_light"
+                    android:progressTint="@color/primary_star" />
+
+                <TextView
+                    android:id="@+id/tvStepDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Current step description"
+                    android:textAppearance="@style/StarBody"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPreviousStep"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/professional_step_button_background"
+                        android:gravity="center"
+                        android:minWidth="120dp"
+                        android:text="◀"
+                        android:textColor="@color/primary_star"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:elevation="0dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:letterSpacing="0.02"
+                        app:cornerRadius="28dp"
+                        app:rippleColor="@android:color/transparent"
+                        app:backgroundTint="@null"
+                        android:stateListAnimator="@null" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnNextStep"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/professional_step_button_primary"
+                        android:gravity="center"
+                        android:minWidth="120dp"
+                        android:text="▶"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:elevation="0dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:letterSpacing="0.02"
+                        app:cornerRadius="28dp"
+                        app:rippleColor="@android:color/transparent"
+                        app:backgroundTint="@null"
+                        android:stateListAnimator="@null" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/edit"
+                android:src="@drawable/ic_edit"
+                app:tint="@color/primary_star" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/error_red" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

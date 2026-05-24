@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Stellarise" parent="Theme.Material3.DayNight">
+        <!-- Star-themed colors -->
+        <item name="colorPrimary">@color/primary_star</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        
+        <item name="colorSecondary">@color/secondary_mint</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+        
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        
+        <item name="colorError">@color/error_red</item>
+        <item name="colorOnError">@color/text_on_primary</item>
+        
+        <!-- Custom star-themed attributes -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <style name="Theme.Stellarise" parent="Base.Theme.Stellarise" />
+    
+    <!-- Star-themed button styles -->
+    <style name="StarButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/primary_star</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="StarButtonSecondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:strokeColor">@color/primary_star</item>
+        <item name="android:textColor">@color/primary_star</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <!-- Star-themed text styles -->
+    <style name="StarTitle" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/primary_star</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    
+    <style name="StarSubtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="StarBody" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- App theme (you already have something like this) -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <!-- Custom StarCard style -->
+    <style name="StarCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.Stellarise.Splash" parent="Theme.Stellarise">
+        <item name="android:windowBackground">@color/primary_star_light</item>
+        <item name="android:statusBarColor">@color/primary_star_light</item>
+        <item name="android:navigationBarColor">@color/primary_star_light</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

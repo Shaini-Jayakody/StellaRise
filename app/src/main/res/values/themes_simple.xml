@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Simple theme for debugging -->
+    <style name="Theme.Stellarise.Simple" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_star</item>
+        <item name="colorPrimaryDark">@color/primary_star_dark</item>
+        <item name="colorAccent">@color/accent_gold</item>
+    </style>
+</resources>
+
+
+
+

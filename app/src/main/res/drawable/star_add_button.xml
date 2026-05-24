@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Star background -->
+    <item>
+        <vector
+            android:width="56dp"
+            android:height="56dp"
+            android:viewportWidth="56"
+            android:viewportHeight="56">
+            <path
+                android:fillColor="@color/primary_star"
+                android:pathData="M28,4 L34,20 L50,20 L38,32 L44,48 L28,36 L12,48 L18,32 L6,20 L22,20 Z" />
+        </vector>
+    </item>
+    
+    <!-- Plus icon overlay -->
+    <item
+        android:left="18dp"
+        android:top="18dp"
+        android:right="18dp"
+        android:bottom="18dp">
+        <vector
+            android:width="20dp"
+            android:height="20dp"
+            android:viewportWidth="20"
+            android:viewportHeight="20">
+            <path
+                android:fillColor="@color/white"
+                android:pathData="M10,2 L10,18 M2,10 L18,10"
+                android:strokeWidth="2"
+                android:strokeColor="@color/white"
+                android:strokeLineCap="round" />
+        </vector>
+    </item>
+    
+</layer-list>
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    
+    <gradient
+        android:startColor="@color/sparkle_purple"
+        android:centerColor="@color/primary_star_light"
+        android:endColor="@color/sparkle_pink"
+        android:angle="135" />
+    
+    <corners android:radius="0dp" />
+    
+    <stroke
+        android:width="2dp"
+        android:color="@color/primary_star"
+        android:alpha="0.8" />
+    
+</shape>
+
+
+
