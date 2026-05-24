@@ -69,3 +69,6 @@ Custom Views –`StarBottleView`,`SimpleMoodChart`,`SimpleLineChart`(drawn with 
 
 </p>
 
+## Screen Record
+Drive link- https://drive.google.com/file/d/1PuamekA3ttdWeclYu_r74CP_WUF4DgqV/view?usp=sharing
+
