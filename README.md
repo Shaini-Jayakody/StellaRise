@@ -45,27 +45,27 @@ Custom Views –`StarBottleView`,`SimpleMoodChart`,`SimpleLineChart`(drawn with 
 
 <p float="left">
 
-  <img src="screenshots/widget.png" width="200"/>
+  <img src="Screenshots/widget.png" width="200"/>
 
-  <img src="screenshots/launch screen.png" width="200"/>
+  <img src="Screenshots/launch screen.png" width="200"/>
 
-  <img src="screenshots/home page.png" width="200"/>
+  <img src="Screenshots/home page.png" width="200"/>
 
-  <img src="screenshots/habit page.png" width="200"/>
+  <img src="Screenshots/habit page.png" width="200"/>
 
-  <img src="screenshots/habit form.png" width="200"/>
+  <img src="Screenshots/habit form.png" width="200"/>
 
-  <img src="screenshots/hydration page.png" width="200"/>
+  <img src="Screenshots/hydration page.png" width="200"/>
 
-  <img src="screenshots/hydration tracking.png" width="200"/>
+  <img src="Screenshots/hydration tracking.png" width="200"/>
 
-  <img src="screenshots/mood page.png" width="200"/>
+  <img src="Screenshots/mood page.png" width="200"/>
 
-  <img src="screenshots/mood history.png" width="200"/>
+  <img src="Screenshots/mood history.png" width="200"/>
 
-  <img src="screenshots/settings page.png" width="200"/>
+  <img src="Screenshots/settings page.png" width="200"/>
 
-  <img src="screenshots/settings.png" width="200"/>
+  <img src="Screenshots/settings.png" width="200"/>
 
 </p>
 
